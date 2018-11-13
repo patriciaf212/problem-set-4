@@ -5,6 +5,9 @@
 function hello() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
+  var div = document.getElementById ("output1")
+    div.innerHTML = "Hello, AP Computer Science Principles!"
+
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -25,6 +28,9 @@ function helloAgain() {
   // do not need to re-declare it, only assign it a value.
 
   // WRITE YOUR EXERCISE 2 CODE HERE
+  name = prompt("Please enter your name")
+  var div = document.getElementById ("output2")
+    div.innerHTML = "Hello," + " " + name + "!"
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -45,7 +51,9 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-
+ var cf = ((cels * 1.8) + 32).fixed(2)
+ var div = document.getElementById ("output3")
+  div.innerHTML = (cels + "degrees Celcius equals" + cf + "degrees Fahrenheit")
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
