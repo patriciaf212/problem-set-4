@@ -229,7 +229,7 @@ function ounces() {
   pounds = Math.floor(pounds);
   ounces = ounces % 16;
   
-  var div= document.getElementById ("output8");
+  var div = document.getElementById ("output8");
    div.innerHTML = "Tons: " + tons + "<br/>" + "Pounds: " + pounds + "<br/>" + "Ounces: " + ounces;
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
@@ -254,7 +254,26 @@ function money() {
   /////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 9 CODE HERE
-
+  let dollars = 0;
+  let quarters = 0;
+  let dimes = 0;
+  let nickels = 0;
+  
+  dollars = pennies / 100; 
+  dollars = Math.floor(dollars);
+  pennies = pennies % 100;
+  quarters = pennies / 25;
+  quarters = Math.floor(quarters);
+  pennies = pennies % 25;
+  dimes = pennies / 10; 
+  dimes = Math.floor(dimes);
+  pennies = pennies % 10; 
+  nickels = pennies / 5; 
+  nickels = Math.floor(nickels);
+  pennies = pennies % 5;
+  
+  var div = document.getElementById ("output9");
+   div.innerHTML = "Dollars: " + dollars + "<br/>" + "Quarters: " + quarters + "<br/>" + "Dimes: " + dimes + "<br/>" + "Nickels: " + nickels + "<br/>" + "Pennies: " + pennies;
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
